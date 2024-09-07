@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-shop catalog</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <nav class="menu">
+                        <button class="menu_btn">
+                            <div class="menu_btn-line"></div>
+                            <div class="menu_btn-line"></div>
+                            <div class="menu_btn-line"></div>
+                        </button>
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="/" class="menu__link">Home</a></li>
+                            <li class="menu__item"><a href="catalog.html" class="menu__link">Catalog</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="logo">
+                        <img src="img/logo.png"class="logo__img" alt="">
+                        <img class="logo_mobile" src="img/logo.png" alt="">
+                    </a>
+                        <div class="header__box">
+                            <p class="header__adres">
+                                123 Furniture St, New York, USA
+                            </p>
+                            <ul class="user-list">
+                                <li class="user-list__item">
+                                    <a href="" class="user-list__link"><img src="img/favorite.svg" alt=""></a>
+                                </li>
+                                <li class="user-list__item">
+                                    <a href="" class="user-list__link"><img src="img/person.svg" alt=""></a>
+                                </li>
+                                <li class="user-list__item">
+                                    <a href="" class="user-list__link basket"><img src="img/basket.svg" alt=""><p class="basket__num">1</p></a>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <ul class="menu_mobile_list ">
+                <li class="menu_mobil_item">
+                    <a href="#">
+                        <p>Sign In</p>
+                    </a>
+                </li>
+                <li class="menu_mobil_item">
+                    <a href="#">
+                        <p>About Us</p>
+                    </a>
+                </li>
+                <li class="menu_mobil_item">
+                    <a href="#">
+                        <p>Our Services</p>
+                    </a>
+                </li>
+                <li class="menu_mobil_item">
+                    <a href="#">
+                        <p>Contact Us</p>
+                    </a>
+                </li>
+                <li class="menu_mobil_item">
+                    <a href="#">
+                        <p>Blog</p>
+                    </a>
+                </li>
+                <li class="menu_mobil_item">
+                    <a href="#">
+                        <p>FAQ</p>
+                    </a>
+                </li>
+           
+            <p class="menu_mobil-adres">Lorem, ipsum dolor sit amet </p>
+        </ul>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__bottom-inner">
+                    <div class="header_bottom-menu-categories">
+                    <ul class="menu-categories">
+                        <li class="menu-categories__item"><a href="#" class="menu-categories__link">Living Room</a></li>
+                            <li class="menu-categories__item"><a href="#" class="menu-categories__link">Bedroom</a></li>
+                            <li class="menu-categories__item"><a href="#" class="menu-categories__link">Dining Room</a></li>
+                            <li class="menu-categories__item"><a href="#" class="menu-categories__link">Office</a></li>
+                            <li class="menu-categories__item"><a href="#" class="menu-categories__link">Outdoor</a></li>
+                            <li class="menu-categories__item"><a href="#" class="menu-categories__link">Decor</a></li>
+                            <li class="menu-categories__item"><a href="#" class="menu-categories__link">Storage</a></li>
+                            <li class="menu-categories__item"><a href="#" class="menu-categories__link">Lighting</a></li>
+                    </ul>
+                </div>
+                <div class="menu_mobil-wrapper">
+                    <ul class="menu_mobil-line">
+                        <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+    </header> 
+
+    <div class="breadcrumbs">
+        <div class="container">
+        <ul class="breadcrumbs_list">
+            <li class="breadcrumbs_list-item">
+                <a href="#">Home</a>
+            </li>
+            <li class="breadcrumbs_list-item">
+                <span> - catalog</span>
+            </li>
+        </ul>
+    </div>
+    </div>
+
+
+    <section class="catalog">
+        <div class="container">
+            <h2 class="catalog_title">
+                Catalog
+            </h2>
+            <div class="catalog_filters">
+                <div class="catalog_filters-item">
+                    <button>All Products</button>
+                    <button>Furniture</button>
+                    <button>Decor</button>
+                    <button>Accessories</button>
+                </div>
+                <div class="catalog_filter-btn">
+                    <select class="filter-style" name="" id="">
+                        <option value="">Sort by</option>
+                        <option value="price_asc">Price: Low to High</option>
+                        <option value="price_desc">Price: High to Low</option>
+                        <option value="newest">Newest Arrivals</option>
+                    </select>
+                    <div class="catalog_filter-btn-box">
+                        <button class="catalog_filter-btn-grid catalog_filter-btn--active">
+                            <img src="img/grid-btn.svg" alt="Grid View">
+                        </button>
+                        <button class="catalog_filter-btn-line">
+                            <img src="img/line-btn.svg" alt="List View">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog_inner">
+                <aside class="catalog_inner-aside aside-filter">
+                    <div class="tabs-wrapper">
+                        <div class="tabs aside-filter_tabs">
+                            <a href="#catalog-tab1" class="tab tab--active aside-filter_tab"><span>Filters</span></a>
+                            <a href="#catalog-tab2" class="tab aside-filter_tab"><span>Categories</span></a>
+                        </div>
+                        <div class="tabs-container">
+                            <div id="catalog-tab1" class="tabs-content aside-filter_tabs-content tabs-content--active">
+                                <form class="aside-filter_form" action="">
+                                    <ul class="aside-filter_list">
+                                        <li class="aside-filter_item-drop">
+                                            <p class="aside-filter_item_title filter_item-drop filter_item-drop--active">Material</p>
+                                            <div class="aside-filter-content">
+                                                <div class="aside-filter-content-box">
+                                                    <label class="aside-filter_content-label" for="">
+                                                        <input class="filter-style" type="checkbox">
+                                                        Wood
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter-content-box">
+                                                    <label class="aside-filter_content-label" for="">
+                                                        <input class="filter-style" type="checkbox">
+                                                        Metal
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter-content-box">
+                                                    <label class="aside-filter_content-label" for="">
+                                                        <input class="filter-style" type="checkbox">
+                                                        Glass
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="aside-filter_item-drop">
+                                            <p class="aside-filter_item_title filter_item-drop filter_item-drop--active">Color</p>
+                                            <div class="aside-filter-content aside-filter-content-radio">
+                                                <div class="aside-filter-content-box">
+                                                    <label class="aside-filter_content-label" for="">
+                                                        <input class="filter-style" name="radio" type="radio">
+                                                        White
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter-content-box">
+                                                    <label class="aside-filter_content-label" for="">
+                                                        <input class="filter-style" name="radio" type="radio">
+                                                        Black
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter-content-box">
+                                                    <label class="aside-filter_content-label" for="">
+                                                        <input class="filter-style" name="radio" type="radio">
+                                                        Brown
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="aside-filter_item-drop">
+                                            <p class="aside-filter_item_title filter_item-drop filter_item-drop--active">Price Range</p>
+                                            <div class="aside-filter-content">
+                                                <input type="text" class="js-range-slider" name="my_range" value=""
+                                                    data-type="double"
+                                                    data-min="1000"
+                                                    data-max="50000"
+                                                    data-from="1000"
+                                                    data-to="10000"
+                                                />
+                                            </div>
+                                        </li>
+                                        <li class="aside-filter_item-list">
+                                            <div class="filter_item-list">
+                                                <p class="filter_item-listtitle">
+                                                    Size
+                                                </p>
+                                                <select name="" id="" class="filter-style filter_item-list-select">
+                                                    <option>Small</option>
+                                                    <option>Medium</option>
+                                                    <option>Large</option>
+                                                    <option>Extra Large</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li class="aside-filter_item-drop">
+                                            <p class="aside-filter_item_title filter_item-drop filter_item-drop--active">Brand</p>
+                                            <div class="aside-filter-content">
+                                                <div class="aside-filter-content-box">
+                                                    <label class="aside-filter_content-label" for="">
+                                                        <input class="filter-style" type="checkbox">
+                                                        Brand A
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter-content-box">
+                                                    <label class="aside-filter_content-label" for="">
+                                                        <input class="filter-style" type="checkbox">
+                                                        Brand B
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter-content-box">
+                                                    <label class="aside-filter_content-label" for="">
+                                                        <input class="filter-style" type="checkbox">
+                                                        Brand C
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter-more">
+                                                    <a href="#" class="aside-filter-link">See more</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="aside-filter_item-drop btn-checked">
+                                            <p class="aside-filter_item_title filter_item-drop filter_item-drop--active">Offers</p>
+                                            <div class="aside-filter-content">
+                                                <div class="aside-filter-content-box">
+                                                    <label class="aside-filter_content-label" for="">
+                                                        <input class="filter-style" type="checkbox">
+                                                        Sale
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter-content-box">
+                                                    <label class="aside-filter_content-label" for="">
+                                                        <input class="filter-style" type="checkbox">
+                                                        New 
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                            <div class="tabs-content aside-filter_tabs-content">Additional Filters</div>
+                        </div>
+                    </div>
+                </aside>
+                <div class="catalog_inner-list">
+                    
+                    <div class="product_item_wrapper product_item">
+                        <a href="#" class="product_item_link">Lorem ipsum dolor sit.</a>
+                    <a href="product.html" class="product_item product_item ">
+                         
+                        <p class="product_item_hover-box">see more</p>
+                        <button class="product_item_favorite">
+                            
+                        </button>
+                        <img src="img/sale-item.jpg" alt="" class="product_item_img">
+                        <h4 class="product_item_title">
+                            Lorem ipsum dolor sit.
+                        </h4>
+                        <p class="price product_item_price">
+                            9 800
+                        </p>
+                        <button class="product_item_basket">
+                            <img src="img/basket.svg" alt="">
+                        </button>
+                        <p class="product_item_notify-text">
+                            Not available
+                        </p>
+
+                    </a>
+                </div>
+
+                <div class="product_item_wrapper product_item--not_available">
+                    <a href="#" class="product_item_link">Lorem ipsum dolor sit.</a>
+                <a href="#" class="product_item product_item ">
+                     
+                    <p class="product_item_hover-box">see more</p>
+                    <button class="product_item_favorite">
+                        
+                    </button>
+                    <img src="img/sale-item3.jpg" alt="" class="product_item_img">
+                    <h4 class="product_item_title">
+                        Lorem ipsum dolor sit.
+                    </h4>
+                    <p class="price product_item_price">
+                        9 800
+                    </p>
+                    <button class="product_item_basket">
+                        <img src="img/basket.svg" alt="">
+                    </button>
+                    <p class="product_item_notify-text">
+                        Not available
+                    </p>
+
+                </a>
+            </div>
+
+            <div class="product_item_wrapper product_item">
+                <a href="#" class="product_item_link">Lorem ipsum dolor sit.</a>
+            <a href="#" class="product_item product_item ">
+                 
+                <p class="product_item_hover-box">see more</p>
+                <button class="product_item_favorite">
+                    
+                </button>
+                <img src="img/sale-item2.jpg" alt="" class="product_item_img">
+                <h4 class="product_item_title">
+                    Lorem ipsum dolor sit.
+                </h4>
+                <p class="price product_item_price">
+                    9 800
+                </p>
+                <button class="product_item_basket">
+                    <img src="img/basket.svg" alt="">
+                </button>
+                <p class="product_item_notify-text">
+                    Not available
+                </p>
+
+            </a>
+        </div>
+
+        <div class="product_item_wrapper product_item--not_available">
+            <a href="#" class="product_item_link">Lorem ipsum dolor sit.</a>
+        <a href="#" class="product_item product_item ">
+             
+            <p class="product_item_hover-box">see more</p>
+            <button class="product_item_favorite">
+                
+            </button>
+            <img src="img/sale-item6.jpg" alt="" class="product_item_img">
+            <h4 class="product_item_title">
+                Lorem ipsum dolor sit.
+            </h4>
+            <p class="price product_item_price">
+                9 800
+            </p>
+            <button class="product_item_basket">
+                <img src="img/basket.svg" alt="">
+            </button>
+            <p class="product_item_notify-text">
+                Not available
+            </p>
+
+        </a>
+    </div>
+
+    <div class="product_item_wrapper product_item--not_available">
+        <a href="#" class="product_item_link">Lorem ipsum dolor sit.</a>
+    <a href="#" class="product_item product_item ">
+         
+        <p class="product_item_hover-box">see more</p>
+        <button class="product_item_favorite">
+            
+        </button>
+        <img src="img/sale-item.jpg" alt="" class="product_item_img">
+        <h4 class="product_item_title">
+            Lorem ipsum dolor sit.
+        </h4>
+        <p class="price product_item_price">
+            9 800
+        </p>
+        <button class="product_item_basket">
+            <img src="img/basket.svg" alt="">
+        </button>
+        <p class="product_item_notify-text">
+            Not available
+        </p>
+
+    </a>
+</div>
+
+<div class="product_item_wrapper product_item--not_available">
+    <a href="#" class="product_item_link">Lorem ipsum dolor sit.</a>
+<a href="#" class="product_item product_item ">
+     
+    <p class="product_item_hover-box">see more</p>
+    <button class="product_item_favorite">
+        
+    </button>
+    <img src="img/sale-item7.jpg" alt="" class="product_item_img">
+    <h4 class="product_item_title">
+        Lorem ipsum dolor sit.
+    </h4>
+    <p class="price product_item_price">
+        9 800
+    </p>
+    <button class="product_item_basket">
+        <img src="img/basket.svg" alt="">
+    </button>
+    <p class="product_item_notify-text">
+        Not available
+    </p>
+
+</a>
+</div>
+
+<div class="product_item_wrapper product_item--not_available">
+    <a href="#" class="product_item_link">Lorem ipsum dolor sit.</a>
+<a href="#" class="product_item product_item ">
+     
+    <p class="product_item_hover-box">see more</p>
+    <button class="product_item_favorite">
+        
+    </button>
+    <img src="img/sale-item.jpg" alt="" class="product_item_img">
+    <h4 class="product_item_title">
+        Lorem ipsum dolor sit.
+    </h4>
+    <p class="price product_item_price">
+        9 800
+    </p>
+    <button class="product_item_basket">
+        <img src="img/basket.svg" alt="">
+    </button>
+    <p class="product_item_notify-text">
+        Not available
+    </p>
+
+</a>
+</div>
+
+<div class="product_item_wrapper product_item--not_available">
+    <a href="#" class="product_item_link">Lorem ipsum dolor sit.</a>
+<a href="#" class="product_item product_item ">
+     
+    <p class="product_item_hover-box">see more</p>
+    <button class="product_item_favorite">
+        
+    </button>
+    <img src="img/sale-item.jpg" alt="" class="product_item_img">
+    <h4 class="product_item_title">
+        Lorem ipsum dolor sit.
+    </h4>
+    <p class="price product_item_price">
+        9 800
+    </p>
+    <button class="product_item_basket">
+        <img src="img/basket.svg" alt="">
+    </button>
+    <p class="product_item_notify-text">
+        Not available
+    </p>
+
+</a>
+</div>
+
+<div class="product_item_wrapper product_item--not_available">
+    <a href="#" class="product_item_link">Lorem ipsum dolor sit.</a>
+<a href="#" class="product_item product_item ">
+     
+    <p class="product_item_hover-box">see more</p>
+    <button class="product_item_favorite">
+        
+    </button>
+    <img src="img/sale-item.jpg" alt="" class="product_item_img">
+    <h4 class="product_item_title">
+        Lorem ipsum dolor sit.
+    </h4>
+    <p class="price product_item_price">
+        9 800
+    </p>
+    <button class="product_item_basket">
+        <img src="img/basket.svg" alt="">
+    </button>
+    <p class="product_item_notify-text">
+        Not available
+    </p>
+
+</a>
+</div>
+
+<div class="product_item_wrapper product_item--not_available">
+    <a href="#" class="product_item_link">Lorem ipsum dolor sit.</a>
+<a href="#" class="product_item product_item ">
+     
+    <p class="product_item_hover-box">see more</p>
+    <button class="product_item_favorite">
+        
+    </button>
+    <img src="img/sale-item.jpg" alt="" class="product_item_img">
+    <h4 class="product_item_title">
+        Lorem ipsum dolor sit.
+    </h4>
+    <p class="price product_item_price">
+        9 800
+    </p>
+    <button class="product_item_basket">
+        <img src="img/basket.svg" alt="">
+    </button>
+    <p class="product_item_notify-text">
+        Not available
+    </p>
+
+</a>
+</div>
+
+<div class="product_item_wrapper product_item--not_available">
+    <a href="#" class="product_item_link">Lorem ipsum dolor sit.</a>
+<a href="#" class="product_item product_item ">
+     
+    <p class="product_item_hover-box">see more</p>
+    <button class="product_item_favorite">
+        
+    </button>
+    <img src="img/sale-item.jpg" alt="" class="product_item_img">
+    <h4 class="product_item_title">
+        Lorem ipsum dolor sit.
+    </h4>
+    <p class="price product_item_price">
+        9 800
+    </p>
+    <button class="product_item_basket">
+        <img src="img/basket.svg" alt="">
+    </button>
+    <p class="product_item_notify-text">
+        Not available
+    </p>
+
+</a>
+</div>
+      
+                </div>
+            </div>
+    <div class="pagination">
+        <ul class="pagination-list">
+            <li class="pagination-list-item active"><a href="#">1</a></li>
+            <li class="pagination-list-item"><a href="#">2</a></li>
+            <li class="pagination-list-item"><a href="#">3</a></li>
+            <li class="pagination-list-item"><a href="#">4</a></li>
+            <li class="pagination-list-item"><a href="#">5</a></li>
+            <li class="pagination-list-item"><a href="#">...</a></li>
+            <li class="pagination-list-item"><a href="#">11</a></li>
+        </ul>
+    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-upper_block">
+                <div class="footer-upper_block-email">
+                    <h3 class="footer-upper_title">Stay Updated with Our Latest Offers and News</h3>
+                    <form class="footer-upper_block-email-input">
+                        <input class="footer-upper_block-email-input-form" type="email" placeholder="E-mail:">
+                        <button class="footer-upper_block-email-btn" type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="footer-upper_block-info">
+                    <h3 class="footer-upper_block-title">Quick Links</h3>
+                    <ul class="footer-upper_block-info-tabl">
+                        <li class="footer-upper_block-info-tabl_item"><a href="#">About Us</a></li>
+                        <li class="footer-upper_block-info-tabl_item"><a href="#">Services</a></li>
+                        <li class="footer-upper_block-info-tabl_item"><a href="#">Contact</a></li>
+                        <li class="footer-upper_block-info-tabl_item"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-upper_block-soc">
+                    <ul class="social_list">
+                        <li class="social_list-item"><a href="#"><img src="img/soc-inst.svg" alt="Instagram"></a></li>
+                        <li class="social_list-item"><a href="#"><img src="img/soc-fb.svg" alt="Facebook"></a></li>
+                        <li class="social_list-item"><a href="#"><img src="img/soc-yt.svg" alt="YouTube"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-lower_block">
+                <a href="#" class="footer-lower_block-left_text footer-lower_block-link">Explore our wide range of high-quality furniture at competitive prices. Find everything you need for your home.</a>
+                <a href="#" class="footer-lower_block-right_text footer-lower_block-link">Get in touch with us for any queries or assistance. We're here to help you with your furniture needs.</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+        <script src="js/jquery.formstyler.min.js"></script>
+        <script src="js/jquery.rateyo.min.js"></script>
+        <script src="js/main.js"></script>
+    
+</body>
+</html>
+
+
